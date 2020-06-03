@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Icon Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="filters">
+        <form>
+          <div class="row">
+            <input
+              class="form-control"
+              list="hotelsList"
+              id="searchBar"
+              placeholder="e.g. Paris"
+            />
+            <datalist id="hotelsList"> </datalist>
+            <button class="btn btn-primary" id="searchButton">Search</button
+            ><br /><br />
+          </div>
+          <div class="row">
+            <div class="col-md-4" id="ckeckIn">
+              Check in <input class="form-control" type="date" />
+            </div>
+
+            <div class="col-md-4" id="ckeckIn">
+              Check out <input class="form-control" type="date" />
+            </div>
+            <div class="col-md-4" id="ckeckIn">
+              Family rooms<select class="form-control" id="rooms">
+                <option value="Single">Single</option>
+                <option value="Double">Double</option>
+                <option value="Family">Family</option>
+              </select>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-md-4" style="color: aliceblue;">
+              Max price: <span id="selectedPrice">1500 &euro;</span>
+              <input
+                type="range"
+                class="slider"
+                id="price"
+                min="700"
+                max="1500"
+                value="1500"
+                step="10"
+              />
+            </div>
+            <div class="col-md-2">
+              <label style="color: aliceblue;"
+                >Stars: <span class="fa fa-star checked"></span
+              ></label>
+              <select id="rating" class="form-control">
+                <option value="null" selected>All</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label style="color: aliceblue;">Guest Rating:</label>
+              <select id="guestRating" class="form-control">
+                <option value="all">All</option>
+                <option value="Okay">0 – 2 Okay</option>
+                <option value="Fair">2 – 6 Fair</option>
+                <option value="Good">6 - 7 Good</option>
+                <option value="Very Good">7 - 8.5 Very Good</option>
+                <option value="Excellent">8.5 - 10 Excellent</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label style="color: aliceblue;">Hotel location</label>
+              <select id="hotelLocation" class="form-control"> </select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10"></div>
+
+        <div>
+          <select class="form-control" id="sorting"></select>
+        </div>
+      </div>
+    </div>
+
+    <div id="hotels"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="newScript.js"></script>
+  </body>
+</html>

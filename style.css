@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.checked{
+    color: orange;
+}
+
+#filters{
+    background-color: rgb(35, 40, 83);
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+}
+#price{
+    width: 100%;
+}
+#selectedPrice{
+    text-align: center;
+    font-weight: lighter;
+    font: outline;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#ckeckIn{
+    text-align: center;
+    font-weight: lighter;
+    font: outline;
+    font-style: italic;
+    font-size: 20px;
+    color: white
+
+}
+
+#searchButton{
+    height: 38px;
+}
+
+#searchBar.form-control{
+    margin-left: 15px;
+    width: 57%;
+}
+
+
+.hotel{
+    background-color: rgba(155, 155, 155, 0.397);
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+}
+.price{
+    color: rgba(39, 124, 5, 0.541);
+  
+    font-weight: bold;
+    font-size: 30px;
+   
+}
+#sorting{
+    margin-right: px;
+    margin-left: 23px;
+}
+.slidecontainer {
+    width: 100%;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(7, 47, 180);
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(74, 9, 252);
+    cursor: pointer;
+  }
